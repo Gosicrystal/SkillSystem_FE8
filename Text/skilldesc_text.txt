@@ -149,11 +149,13 @@ Wrath: If HP < 50%,[N]
 
 ## SD_Counter
 Counter: Reflect physical damage[N]
-when attacked at 1-2 range.[X]
+when attacked at 1-2 range.[N]
+(Reflected damage cannot kill.)[X]
 
 ## SD_CounterMagic
 Countermagic: Reflect magic damage[N]
-when attacked at 1-2 range.[X]
+when attacked at 1-2 range.[N]
+(Reflected damage cannot kill.)[X]
 
 ## SD_Miracle
 Miracle: Survive a lethal[N]
@@ -417,31 +419,31 @@ when on terrain with effects.[X]
 
 ## SD_SealStr
 Seal Strength: Debuff opponent's Str[N]
-by 6 after combat. (Recover 2/turn)[X]
+by 6 after combat. (Recover 1/turn)[X]
 
 ## SD_SealSkl
 Seal Skill: Debuff opponent's Skl[N]
-by 6 after combat. (Recover 2/turn)[X]
+by 6 after combat. (Recover 1/turn)[X]
 
 ## SD_SealSpd
 Seal Speed: Debuff opponent's Spd[N]
-by 6 after combat. (Recover 2/turn)[X]
+by 6 after combat. (Recover 1/turn)[X]
 
 ## SD_SealLuk
 Seal Luck: Debuff opponent's Luck[N]
-by 6 after combat. (Recover 2/turn)[X]
+by 6 after combat. (Recover 1/turn)[X]
 
 ## SD_SealDef
 Seal Defense: Debuff opponent's Def[N]
-by 6 after combat. (Recover 2/turn)[X]
+by 6 after combat. (Recover 1/turn)[X]
 
 ## SD_SealRes
 Seal Resistance: Debuff opponent's Res[N]
-by 6 after combat. (Recover 2/turn)[X]
+by 6 after combat. (Recover 1/turn)[X]
 
 ## SD_SealMag
 Seal Magic: Debuff opponent's Mag[N]
-by 6 after combat. (Recover 2/turn)[X]
+by 6 after combat. (Recover 1/turn)[X]
 
 ## SD_Gamble
 Gamble: A reckless attack with[N]
@@ -576,8 +578,9 @@ Breath of Life: After attacking,[N]
 allies in 2 tiles heal of 20% max HP.[X]
 
 ## SD_Fury
-Fury: +2 Atk/Spd/Def/Res. Unit[N]
-takes 6 damage after combat.[X]
+Fury: +2 Atk/Spd/Def/Res. Unit takes[N]
+6 damage (non-lethal) after combat,[N]
+unless enemy dies in their phase.[X]
 
 ## SD_Dazzle
 Dazzle: Opponents cannot[N]
@@ -785,7 +788,7 @@ all hits except the first one.[X]
 ## SD_BarricadePlus
 Barricade+: Receive 1/2 damage[N]
 from the 2nd hit, 1/4 from the[N]
-3rd, and 1/8 from the 4th.[X]
+3rd, 1/8 from the 4th, and so on.[X]
 
 ## SD_PointBlank
 Point Blank: Minimum range of[N]
@@ -843,20 +846,20 @@ Vanity: Gain +2 Damage and +10 Hit[N]
 when fighting enemy at 2 range.[X]
 
 ## SD_MageSlayer
-Mage Slayer: Gain +2 damage and +10%[N]
+Mage Slayer: Gain +2 damage and +10[N]
 crit when facing magical enemies.[X]
 
 ## SD_KnightAspirant
-Knight Aspirant: When above 75%[N]
-health, +2 damage, +15% avoid.[X]
+Knight Aspirant: When HP is at 75%[N]
+or higher, +2 damage, +15 avoid.[X]
 
 ## SD_Watchful
 Watchful: This unit cannot be[N]
 captured or stolen from.[X]
 
 ## SD_Hero
-Hero: +30% skill activation[N]
-rate when HP is below 50%.[X]
+Hero: +30 skill activation rate[N]
+when HP is at 50% or lower.[X]
 
 ## SD_Boon
 Boon: Cure bad status effects[N]
